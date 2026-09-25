@@ -1,0 +1,251 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientFluid 15s ease infinite;
+    color: #333;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Animação do fundo fluido */
+@keyframes gradientFluid {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+header img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-form {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Caixa principal do formulário */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Blocos de dados */
+fieldset {
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+legend {
+    font-weight: bold;
+    color: #2980b9;
+    padding: 0 8px;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b6584;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f7f9fa;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Ajustes para os rádios e textos ficarem lado a lado */
+input[type="radio"] {
+    margin-left: 15px;
+    margin-right: 5px;
+    accent-color: #3498db;
+    display: inline-block;
+    width: auto;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+/* label e rádio na mesma linha */
+input[type="radio"] + label {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Avaliação */
+input[type="range"] {
+    width: 100%;
+    margin: 12px 0;
+    accent-color: #3498db;
+}
+
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+/* Botões */
+.botao-form {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.botao-form:hover {
+    background-color: #2980b9;
+}
+
+.botao-form:active {
+    transform: scale(0.98);
+}
+
+
+
+/* Estilos para a página de Obrigado */
+
+/* Centraliza o conteúdo no meio da tela */
+body:has(.card-sucesso) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caixa sucesso */
+.card-sucesso {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Ajuste da imagem no card */
+.sucesso img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* textos do card de obrigado */
+.card-sucesso h1 {
+    color: #2c3e50;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-sucesso h3 {
+    color: #4b6584;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+.botao-voltar {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.agradecimento {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+.botao-voltar:hover {
+    background-color: #2980b9;
+}
+
+.botao-voltar:active {
+    transform: scale(0.98);
+}

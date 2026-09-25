@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Formulario De Aula </title>
+       <link href="estilo.css" rel="stylesheet">
+    
+    </head>
+
+
+    <body>
+        <header> 
+            <img src="https://cdn.creativefabrica.com/2021/09/01/A-Letter-Graphics-16631282-1-1-580x386.jpg" width="100" height="100"/>
+           <h2 class="title-form"> Formulario de Avaliaçao </h2>
+           </header>
+              
+               <form action="obrigado.html" method="get">
+            <fieldset>
+                <legend> Dados Pessoais</legend>
+                <label>Digite seu nome</label>
+                <input type="text" name="none" placeholder="Danilo Santos" required><br>
+                <label>Seu telefone:</label>
+                <input type="tel" name="telefone" placeholder="(00) 00000-0000" required><br>
+                <label>Idade:</label>
+                <input type="number" name="idade" placeholder="00" required><br>
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="seuemail@gmail.com" required><br>
+
+                <label>Escolha o seu curso:</label>
+                <input type="radio" name="curso" value="ADS" placeholder="" required>
+                <label>ADS</label>
+                <input type="radio" name="curso" value="Medicina" placeholder="" required>
+                <label>Medicina</label>
+                <input type="radio" name="curso" value="Computação" placeholder="" required>
+                <label>Computação</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Avalie nosso atendimento:</label><br>
+                <input type="range" min="0" max="5" placeholder=""><br>
+                <label>Deixe aqui seu feedback:</label><br>
+                <textarea name="feedback" placeholder="Coloque seu feedback aqui" required></textarea><p>
+            </fieldset>
+
+            <input class="botao-form" type="submit" value="Enviar">
+            <input class="botao-form" type="reset" value="Limpar">
+        </form>
+    </body>
+</html>
